@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url(https://fonts.googleapis.com);
+@import url(https://fonts.gstatic.com);
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --primary-light-hsl: 200, 100%, 91%;
+  --primary-hsl: 200, 100%, 50%;
+  --primary-dark-hsl: 200, 100%, 6%;
+  --success-hsl: 100, 60%, 50%;
+  --error-hsl: 0, 60%, 50%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,5 +41,83 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.kanit-light {
+  color: black;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal
+}
+
+
+
+
+
+
+.Spaceship {
+  /* --color: hsla(var(--primary-light-hsl), 0.9); 
+
+  background-color: var(--color); */ /* Establecer el color de fondo */
+  border: 2px solid white; /* Establecer el borde blanco más fuerte */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Agregar una sombra con color blanco */
+}
+
+
+
+.card {
+  width: 400px;
+  height: 320px;
+  transition: all 0.2s;
+  
+  cursor: pointer;
+
+  border: 0px solid white; /* Establecer el borde blanco más fuerte */
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.card-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255,255,255,.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient( #d6d9d6, #fbfbfb);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.circle:nth-child(1) {
+  bottom: -25px;
+  left: -25px;
+}
+
+.circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
   }
 }
