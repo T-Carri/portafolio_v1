@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
+import Navbar from "./ui/navbar";
 
 
 
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-cover h-lvh bg-center bg-no-repeat bg-[url('/sky.jpg')] `} >{children}
+      <body className={`bg-cover lg:h-screenbg-center bg-no-repeat bg-[url('/sky.jpg')] `} >
+        
+        {children}
     
       </body>
     </html>

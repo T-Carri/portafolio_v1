@@ -2,8 +2,18 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { Kanit} from "next/font/google";
 
 import { images } from "./constants";
+
+
+
+
+const kanit = Kanit({
+  weight: '600', // Aquí especifica el peso deseado, por ejemplo, '400' para regular.
+  subsets: ['latin'],
+});
+
 
 const Slider = () => {
   const [activeImage, setActiveImage] = useState(0);
@@ -23,10 +33,10 @@ console.log('dato',activeImage )
   };
 
   return (
-    <div className=" lg:w-1/2  md:w-full  xl:w-1/2 h-full flex-1  flex items-center justify-center">
-    <div id="controls-carousel" className="relative w-full h-full " data-carousel="static">
+    <div className=" lg:w-1/2  md:w-full md:mt-3 xl:w-1/2  flex-1  flex items-center justify-center">
+    <div id="controls-carousel" className="relative w-full  " data-carousel="static">
     
-    <div className="relative  overflow-hidden rounded-lg md:h-96 ">
+    <div className="dejameVerte relative lg:flex lg:flex-row md:flex md:flex-col overflow-hidden rounded-lg  ">
          
     
    
@@ -38,18 +48,82 @@ console.log('dato',activeImage )
       
        className={`${
          idx === activeImage
-           ? "block w-full  md:h-dvh lg:h-[80vh] text-left "
+           ? "block w-full     "
            : "hidden"
        }`}
      >
        
-<h2    className={`${
+
+     <div   className={`${
         idx === activeImage
-          ? "text-black": "hidden"}`}> {elem.id}</h2>
-     
+          ? " cardi mx-auto ": "hidden"}`}>
+  <div className={`${
+        idx === activeImage
+          ? " bg ": "hidden"}`}>
+<div className={`${
+        idx === activeImage
+          ? "flex flex-row center-items": "hidden"}`}>
+  <div   className={`${
+        idx === activeImage
+          ? "m-2": "hidden"}`} >  
+<Image className={`${
+        idx === activeImage
+          ? "": "hidden"}`} src={elem.logo} alt="sij" width={100} height={100}/>
+        
+     </div>
+  <div>
+<h3 className={`text-black text-center pt-7 ${kanit.className}`}>{elem.title}</h3>
+
+  </div>
+</div>
+
+
+<hr className="card-divider1 mx-auto "></hr>
+<p className={`text-black text-center  `}> {elem.desc}</p>
+<hr className="card-divider mx-auto "></hr>
+
+
+<div className="flex flex-row items-end  justify-center mt-3">   
+  {elem.tecnologia?.map((item, index) => (
+    <div className="mx-auto " key={index}><Image src={item} alt="go" width={50} height={50}/></div>
+  ))}
+
+  
+<a
+  className="group mx-auto relative inline-flex items-center overflow-hidden rounded bg-black px-5 py-1 text-white focus:outline-none focus:ring active:bg-indigo-500"
+  href="#"
+>
+  <span className="absolute -start-full transition-all group-hover:start-4">
+    <svg
+      className="size-5 rtl:rotate-180"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M17 8l4 4m0 0l-4 4m4-4H3"
+      />
+    </svg>
+  </span>
+
+  <span className="text-sm font-medium transition-all group-hover:ms-4"> Go </span>
+</a>
+
+</div>
+
+          </div>
+  <div  className={`${
+        idx === activeImage
+          ? " blob": "hidden"}`}></div>
+</div>
+
       
      </div>
-     <div >   <Image
+     <div className="block w-full "  >   <Image
     
            src={elem.src}
            alt={elem.title}
@@ -58,7 +132,8 @@ console.log('dato',activeImage )
            className={`${
             idx === activeImage
               ? "w-full  object-cover  md:rounded-tl-3xl md:rounded-bl-3xl": "hidden"}`}
-         />
+ />
+
 </div>
 </div>
    ))}

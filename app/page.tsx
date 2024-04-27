@@ -16,15 +16,15 @@ export default function Home() {
 
   return (
   <> 
-      <Navbar/>
-      <main className="  min-h-max md:relative lg:flex  lg:flex-col isolate px-6 mpt-20 lg:px-8 ">
-  <div className="w-full pt-5  lg:flex  lg:flex-row">
+   <Navbar/>
+      <main className=" lg:h-full xl:flex  xl:flex-col mt-3 ">
+  <div className="w-full lg:h-1/3 lg:flex  lg:flex-row">
   <Tarjeta/>
   
   <Slider  />
   </div>
  
-  <div w-full >
+  <div className="w-full 	lg:h-full lg:flex  lg:flex-row" >
    <Tecnologias/>
    
        <Contacto   />
