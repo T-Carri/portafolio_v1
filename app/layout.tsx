@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-cover bg-center bg-no-repeat bg-[url('/sky.jpg')] `} >{children}
+      <body className={`bg-cover h-lvh bg-center bg-no-repeat bg-[url('/sky.jpg')] `} >{children}
     
       </body>
     </html>

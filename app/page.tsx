@@ -17,26 +17,22 @@ export default function Home() {
   return (
   <> 
       <Navbar/>
-      <main className="flex min-h-screen flex-col items-center p-2 ">
+      <main className="  min-h-max md:relative lg:flex  lg:flex-col isolate px-6 mpt-20 lg:px-8 ">
+  <div className="w-full pt-5  lg:flex  lg:flex-row">
+  <Tarjeta/>
   
-  
-   
-  <div className="flex w-full h-full flex-row items-center">
-   <Tarjeta/>
+  <Slider  />
+  </div>
+ 
+  <div w-full >
    <Tecnologias/>
+   
+       <Contacto   />
+
+
+
   </div>
    
-
-    <div className="flex w-full flex-row items-center">
-     
-
-      <Slider  />
-      
-      
-      {/* space blur stuff */}
-       <Contacto   />
-   
-    </div>
 
 </main>
   </>

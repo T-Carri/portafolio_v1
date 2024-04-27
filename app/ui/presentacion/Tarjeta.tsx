@@ -13,9 +13,9 @@ const kanit = Kanit({
 
 const Tarjeta = () => {
   return (
-    <div className="bg-white w-1/2 h-80 flex-1 flex flex-col items-center justify-center rounded-lg ">
+    <div className="bg-white lg:w-full md:w-full xl:w-1/2   h-80 flex-1 flex flex-col items-center justify-center rounded-lg lg:pt-4 ">
     <div className="w-full h-20">
-  <Image src={'/7783504.jpg'} alt="pattern" className="w-full h-full object-cover opacity-10" priority={true} width={400} height={200}/>
+  <Image src={'/patterTarjeta.svg'} alt="pattern" className="w-full h-full object-cover opacity-10" priority={true} width={400} height={200}/>
 </div>
      
      <div className="w-full h-80 flex-1 flex flex-row items-center justify-center">
