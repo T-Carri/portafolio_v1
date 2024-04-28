@@ -2,7 +2,7 @@ import React from 'react'
 import { tecnologias } from './constants'
 const Tecnologias = () => {
   return (
-    <div className="static bg-black w-full xl:w-1/2 h-90 flex-1 flex items-center justify-center">
+    <div className="bg-black w-full xl:w-1/2 h-90 flex-1 flex items-center justify-center">
     <div className='border border-solid border-white p-2'>
     
     
