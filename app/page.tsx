@@ -17,17 +17,16 @@ export default function Home() {
   return (
   <> 
    <Navbar/>
-      <main className=" lg:h-full xl:flex  xl:flex-col mt-3 ">
-  <div className="w-full lg:h-1/3 lg:flex  lg:flex-row">
+      <main className="container mx-auto lg:h-full xl:flex  xl:flex-col mt-1 ">
+  <div className="w-full lg:h-screen lg:flex-1  lg:flex-col">
   <Tarjeta/>
   
   <Slider  />
   </div>
  
-  <div className="w-full 	lg:h-full lg:flex  lg:flex-row" >
+  <div className="w-full 	lg:h-full lg:flex-1   lg:flex-col" >
    <Tecnologias/>
    
-       <Contacto   />
 
 
 
@@ -35,6 +34,7 @@ export default function Home() {
    
 
 </main>
+       <Contacto   />
   </>
   );
 }

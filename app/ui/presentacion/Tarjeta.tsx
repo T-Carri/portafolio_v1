@@ -13,20 +13,24 @@ const kanit = Kanit({
 
 const Tarjeta = () => {
   return (
-    <div className="bg-white lg:w-full md:w-full xl:w-1/2   h-80 flex-1 flex flex-col items-center justify-center rounded-lg lg:pt-0 ">
-    <div className="w-full h-20">
-  <Image src={'/patterTarjeta.svg'} alt="pattern" className="w-full h-full object-cover opacity-10" priority={true} width={400} height={200}/>
-</div>
+    <div className="bg-white md:w-full lg:w-full  xl:w-full   h-full flex-1 flex flex-col items-center justify-center rounded-lg lg:pt-0 ">
+  <div className='w-full h-20'>
+
+  <Image src={'/patterTarjeta.svg'} alt="pattern" className="w-full  h-40  object-cover opacity-10 "  width={400} height={200}/>
+  </div>
+
      
      <div className="w-full h-80 flex-1 flex flex-row items-center justify-center">
-      <div >
+      <div className='z-40'>
         <Image src={'/peep.png'} alt="peep" width={300} height={300}/>
       </div>
         <div className="flex flex-col items-center p-3" >
         <svg className="h-7 w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z"/></svg>
-        <h3 className={`text-xl mt-3 text-black ${kanit.className}`}>
+        
+          <h3 className={`text-xl mt-3 text-black ${kanit.className}`}>
           ¡Hola! Soy Bryan Carrillo, un apasionado programador web full stack autodidácta. 
           </h3>
+
           <div className="w-full flex flex-row items-center justify-center mt-3">
           <span className="bg-gray-600 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-white">Desde 2018</span>
           <span className="bg-gray-600 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-white">Mexicano</span>

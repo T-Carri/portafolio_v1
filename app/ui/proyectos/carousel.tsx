@@ -33,10 +33,10 @@ console.log('dato',activeImage )
   };
 
   return (
-    <div className=" lg:w-1/2  md:w-full md:mt-3 xl:w-1/2  flex-1  flex items-center justify-center">
+    <div className=" proyectos rounded-xl  lg:w-full  md:w-full md:mt-3 xl:w-full   flex items-center justify-center p-5">
     <div id="controls-carousel" className="relative w-full  " data-carousel="static">
     
-    <div className="dejameVerte relative lg:flex lg:flex-row md:flex md:flex-col overflow-hidden rounded-lg  ">
+    <div className="dejameVerte relative w-full overflow-hidden rounded-lg  ">
          
     
    
@@ -127,11 +127,11 @@ console.log('dato',activeImage )
     
            src={elem.src}
            alt={elem.title}
-           width={400}
-           height={400}
+           width={600}
+           height={600}
            className={`${
             idx === activeImage
-              ? "w-full  object-cover  md:rounded-tl-3xl md:rounded-bl-3xl": "hidden"}`}
+              ? "w-auto  object-cover md:rounded-3xl md:rounded-3xl": "hidden m-5"}`}
  />
 
 </div>

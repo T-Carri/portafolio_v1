@@ -91,11 +91,8 @@ body {
 }
 
 .datosContacto{
-  background: rgba(255, 255, 255, 0.185);
+  background: rgba(255, 255, 255, 0.644);
   
-}
-.card-inner:hover {
-  transform: scale(1.04) rotate(1deg);
 }
 
 .circle {
@@ -270,3 +267,16 @@ body {
   border-radius: 50px;
   
 }
+
+
+.tecnologies{
+
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+
+.proyectos{ background: rgba(113, 131, 170, 0.089);
+  box-shadow: 0 0 10px rgba(6, 9, 177, 0.74);
+  backdrop-filter: blur(1px);}

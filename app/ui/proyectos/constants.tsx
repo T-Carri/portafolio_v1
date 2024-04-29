@@ -1,6 +1,14 @@
 export const images = [
+  {
+    id: 1,
+    src: "/5179212.jpg",
+    logo: '/react.svg',
+    title: "Prácticas",
+    desc: "Proyectos de cajón",
+    tecnologia:["/js.svg", "/ts.svg", "/react.svg", "/nodejs.svg"]
+  },
     {
-      id: 1,
+      id: 2,
       src: "/sij.png",
       logo: '/p2.svg',
       title: "Control de obra SIJ",
@@ -8,21 +16,14 @@ export const images = [
       tecnologia:["/php.svg", "/mysql.svg", "/jquery.svg", "/bootstrap.svg"]
     },
     {
-      id: 2,
+      id: 3,
       src: "/cepointPub.PNG",
       logo: '/cepoint.PNG',
       title: "CEpoint",
       desc: "Aplicación sistema de asistencia para obra civíl.",
       tecnologia:["/js.svg", "/firebase.svg", "/react.svg"]
-    },
-    {
-      id: 3,
-      src: "/5179212.jpg",
-      logo: '/react.svg',
-      title: "Prácticas",
-      desc: "Proyectos de cajón",
-      tecnologia:["/js.svg", "/ts.svg", "/react.svg", "/nodejs.svg"]
-    },
+    }
+ 
 
   ];
   
