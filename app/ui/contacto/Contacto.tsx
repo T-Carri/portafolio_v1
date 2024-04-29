@@ -26,7 +26,7 @@ const Contacto = () => {
 
 
 
-<div className='  md:sm:flex md:sm:items-center md:sm:flex-row  lg:m-1 ' >
+<div className='  md:sm:flex items-center md:sm:flex-row  lg:m-1 ' >
 
 <div className='datosContacto  w-full  text-center  rounded-xl p-3'>
     <ul className='flex items-center flex-col justify-center space-x-4 mt-1 text-black'>
@@ -52,7 +52,7 @@ const Contacto = () => {
 
     </ul>
     </div>
-<div className="w-full    items-center justify-center  flex-col    m-3 ">  
+<div className="w-full  flex items-center justify-center  flex-col    m-3 ">  
 
 
 <div className="w-1/2  flex flex-row items-center justify-center  ">
