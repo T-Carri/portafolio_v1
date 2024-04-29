@@ -56,7 +56,7 @@ console.log('dato',activeImage )
 
      <div   className={`${
         idx === activeImage
-          ? " cardi mx-auto ": "hidden"}`}>
+          ? " cardi mx-auto mt-10 ": "hidden"}`}>
   <div className={`${
         idx === activeImage
           ? " bg ": "hidden"}`}>

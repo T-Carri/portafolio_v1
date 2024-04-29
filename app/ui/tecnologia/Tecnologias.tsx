@@ -12,8 +12,8 @@ const Tecnologias = () => {
   return (
     <div className=" w-full  h-90 block  sm:block  lg:flex md:items-center lg:justify-center xl:flex xl:items-center xl:justify-center  p-2">
 
-    <div className=' p-2 flex flex-row justify-center items-center xl:flex xl:flex-col' >
-      <div className={` m-10 xl:m-5 text-center ${kanit.className}`}>
+    <div className=' p-2 flex flex-col justify-center items-center xl:flex xl:flex-col' >
+      <div className={` m-5 xl:m-5 text-center ${kanit.className}`}>
       <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">    <h5 className='text-lg'>Herramientas de entorno</h5></span>
       </div>
       <div className=' tecnologies border border-solid border-3 border-white flex flex-wrap lg:flex-col xl:flex-col m-1 p-5'>
@@ -62,8 +62,8 @@ const Tecnologias = () => {
       </div>
     </div>
   
-    <div className=' p-2  flex flex-row justify-center items-center  xl:flex xl:flex-col'>
-      <div className={` m-10 xl:m-5 text-center ${kanit.className}`}>      <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"><h5 className='text-lg'> Tecnologias en proceso de aprendizaje</h5> </span></div>
+    <div className=' p-2  flex flex-col justify-center items-center  xl:flex xl:flex-col'>
+      <div className={` m-5 xl:m-5 text-center ${kanit.className}`}>      <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"><h5 className='text-lg'> Tecnologias en proceso de aprendizaje</h5> </span></div>
       <div>
         <div className=' tecnologies border border-solid border-3 border-white flex flex-wrap lg:flex-col xl:flex-col m-1 p-5'>
           {tecnologias[0].tecnologias.map((svg, index) => (
