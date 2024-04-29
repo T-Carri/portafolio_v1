@@ -33,7 +33,7 @@ console.log('dato',activeImage )
   };
 
   return (
-    <div className=" proyectos rounded-xl m-2  lg:w-full  md:w-full md:mt-3 xl:w-full   flex items-center justify-center ">
+    <div className="  rounded-xl m-2  lg:w-full  md:w-full md:mt-3 xl:w-full   flex items-center justify-center ">
     <div id="controls-carousel" className="relative w-full  " data-carousel="static">
     
     <div className="dejameVerte relative w-full overflow-hidden rounded-lg  ">
