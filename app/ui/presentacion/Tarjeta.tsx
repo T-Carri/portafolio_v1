@@ -28,7 +28,7 @@ const Tarjeta = () => {
         <svg className="h-7 w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z"/></svg>
         
           <h3 className={`text-xl text-center mt-3 text-black ${kanit.className}`}>
-          ¡Hola! Soy Bryan Carrillo, un apasionado programador web full stack autodidácta. 
+          ¡Hola! Soy Bryan Carrillo,  programador web full stack. 
           </h3>
 
           <div className="w-full flex flex-row items-center justify-center mt-3">
