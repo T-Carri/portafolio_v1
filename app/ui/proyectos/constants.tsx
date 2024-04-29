@@ -13,7 +13,7 @@ export const images = [
       logo: '/p2.svg',
       title: "Control de obra SIJ",
       desc: "Sistema de control y administración de constructora Soluciones Integrales Jasso.",
-      tecnologia:["/php.svg", "/mysql.svg", "/jquery.svg", "/bootstrap.svg"]
+      tecnologia:["/php.svg", "/mysql.svg", "/jquery.svg"]
     },
     {
       id: 3,
