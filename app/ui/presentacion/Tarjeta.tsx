@@ -20,14 +20,14 @@ const Tarjeta = () => {
   </div>
 
      
-     <div className="w-full h-80 flex-1 flex flex-row items-center justify-center">
-      <div className='z-40'>
+     <div className="w-full h-80 flex-1 flex-row md:flex md:flex-row xl:flex xl:flex-row items-center justify-center mx-auto">
+      <div className='z-40 hidden md:block lg:block xl:block'>
         <Image src={'/peep.png'} alt="peep" width={300} height={300}/>
       </div>
-        <div className="flex flex-col items-center p-3" >
+        <div className="flex flex-col items-center p-3 mx-auto" >
         <svg className="h-7 w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z"/></svg>
         
-          <h3 className={`text-xl mt-3 text-black ${kanit.className}`}>
+          <h3 className={`text-xl text-center mt-3 text-black ${kanit.className}`}>
           ¡Hola! Soy Bryan Carrillo, un apasionado programador web full stack autodidácta. 
           </h3>
 

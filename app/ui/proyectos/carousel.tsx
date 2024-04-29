@@ -33,7 +33,7 @@ console.log('dato',activeImage )
   };
 
   return (
-    <div className=" proyectos rounded-xl  lg:w-full  md:w-full md:mt-3 xl:w-full   flex items-center justify-center p-5">
+    <div className=" proyectos rounded-xl  lg:w-full  md:w-full md:mt-3 xl:w-full   flex items-center justify-center ">
     <div id="controls-carousel" className="relative w-full  " data-carousel="static">
     
     <div className="dejameVerte relative w-full overflow-hidden rounded-lg  ">
@@ -43,7 +43,7 @@ console.log('dato',activeImage )
    {images.map((elem, idx) => (
      <div key={idx}       className={`${
         idx === activeImage
-          ?"flex flex-row items-center  justify-center":"hidden" }`}>
+          ?"flex flex-col-reverse xl:flex-row items-center  justify-center":"hidden" }`}>
      <div
       
        className={`${
@@ -127,11 +127,13 @@ console.log('dato',activeImage )
     
            src={elem.src}
            alt={elem.title}
-           width={600}
-           height={600}
+           width={700}
+           height={700}
+           quality={100}
+           priority={true}
            className={`${
             idx === activeImage
-              ? "w-auto  object-cover md:rounded-3xl md:rounded-3xl": "hidden m-5"}`}
+              ? "w-full  object-cover md:rounded-3xl md:rounded-3xl": "hidden m-5"}`}
  />
 
 </div>
