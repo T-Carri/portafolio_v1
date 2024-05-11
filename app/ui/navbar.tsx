@@ -1,9 +1,9 @@
 'use client'
 import React, { useState } from 'react';
-
+import Modal from './modales/modal';
 const Navbar = () => {
 
-
+  
   const [isChecked, setIsChecked] = useState<boolean>(true);
 
   const handleCheckboxChange = () => {
@@ -11,6 +11,7 @@ const Navbar = () => {
   };
 
   return (
+    
     <header className=" bg-white  ">
     <nav className="bg-white ">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -81,6 +82,10 @@ const Navbar = () => {
 
     
                 </button>
+
+
+
+
               </div>
 
               {/* <!--
@@ -128,6 +133,7 @@ const Navbar = () => {
     </div> */}
       </nav>
       </header>
+
   )
 }
 
